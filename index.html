@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-32x32.png">    
+    <link rel="stylesheet" href="style.css">
+    <title>Formulário | Lucas </title>
+</head>
+
+<body>
+    <div class="box">
+    <form action="post">
+        <fieldset class="nome-sobrenome">
+             <legend>Formulário em HTML e CSS</legend> 
+            <div class="div-nome">
+                <label class="nome-sobrenome-email" for="nome">Nome</label>
+                <input class="inputxt" type="text" name="nome" id="nome" required>
+            </div>
+            <br>
+            <div class="div-sobrenome">
+                <label class="nome-sobrenome-email" for="sobrenome">Sobrenome</label>
+                <input class="inputxt" type="text" name="sobrenome" id="sobrenome" required>
+            </div>
+        </fieldset>
+        <br>
+        <div class="div-email">
+            <label class="nome-sobrenome-email" for="email">Email</label>
+            <input class="inputxt" type="email" name="email" id="email" required>
+        </div>
+        <br>
+        <fieldset>
+            <div class="data">
+                <label for="data">Data De Nascimento</label> <br>
+                <input type="date" class="input-date" name="" id="date">
+        </div>
+        </fieldset>
+
+        <fieldset class="senioridade">
+            <div class="div-senioridade">
+                <label class="senioridade">Senioridade</label>
+                <br>
+                <select name="senioridade-select" id="senioridade-select">
+                    <option selected disabled>--Selecione--</option>
+                    <option>Junior</option>
+                    <option>Pleno</option>
+                    <option>Senior</option>
+                </select>
+            </div>
+        </fieldset>
+    
+        <fieldset>
+            <div class="div-tec">
+                <label>Tecnologias conhecidas</label> <br>
+                <input class="input input-chechbox" type="checkbox" name="tecnologia1" id="tecnologia1" value="HTML">
+                <label for="tecnologia1">HTML</label>
+                <br>
+                <input class="input input-chechbox" type="checkbox" value="CSS" name="tecnologia2" id="tecnologia2">
+                <label for="tecnologia2">CSS</label>
+                <br>
+                <input class="input input-chechbox" type="checkbox" name="tecnologia3" id="tecnologia3" value="JavaScript">
+                <label for="tecnologia3">JavaScript</label>
+                <br>
+                <input class="input input-chechbox" type="checkbox" name="tecnologia4" id="tecnologia4" value="php">
+                <label for="tecnologia4">PHP</label>
+                <br>
+                <input class="input input-chechbox" type="checkbox" name="tecnologia5" id="tecnologia5" value="python">
+                <label for="tecnologia5">Python</label>
+            </div>
+        
+        </fieldset>
+
+         <div class="div-about">
+            <label>Conte-me um pouco sobre você </label>
+            <textarea  class="txtarea" style="width:300px;" name="sobre" id="sobre" row="6" ></textarea>
+        </div>
+
+        <div class="div-btn">
+            <button class="btn" type="submit">Enviar</button>
+        </div>
+    </form>
+    </div>
+</body>
+</html>
